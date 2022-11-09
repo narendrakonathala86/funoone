@@ -322,14 +322,18 @@ hr {
 
 .text-wrapper {
   height: 100%;
+  width: 100%;
   display: table;
-  padding-left: 140px;
 }
 
 .text-wrapper > div {
   vertical-align: middle;
   display: table-cell;
+  text-align: center;
 }
+
+
+
 
 .feature-thumb {
   padding: 40px 0;
@@ -388,6 +392,7 @@ hr {
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
+
 }
 
 .services-item .icon i {
@@ -476,7 +481,7 @@ hr {
 
 .top-nav-collapse {
   background: #fff;
-  z-index: 999999;
+  z-index: 2;
   top: 0px !important;
   box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
   -webkit-animation-duration: 1s;
@@ -684,7 +689,7 @@ hr {
 
 #hero-area .contents .head-title  span{
   color: #a219a2;
-  
+
 }
 
 /* Team Item */
@@ -1194,11 +1199,11 @@ hr {
 }
 
 #pricing .active {
-  z-index: 99999;
+  z-index: 1;
 }
 
 /* ==========================================================================
-  17. Blog 
+  17. Blog
    ========================================================================== */
 #blog .blog-item-wrapper {
   background: #fff;
@@ -1548,6 +1553,8 @@ hr {
   display: inline-block;
   width: inherit;
   padding: 7px;
+  height: 64px;
+  width: 64px
 }
 
 .testimonial-item .content {
@@ -1556,6 +1563,8 @@ hr {
 
 .testimonial-item .content .description {
   width: 100%;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .testimonial-item .info h2 {
@@ -1860,7 +1869,7 @@ textarea {
 
 /* Footer Area Start */
 .footer-area {
-  background: #34363a;
+  background: #1262AF;
 }
 
 .footer-area .footer-titel {
@@ -1906,7 +1915,7 @@ textarea {
 }
 
 .copyright {
-  background: #34363a;
+  background: #1260A2;
   padding: 15px;
 }
 

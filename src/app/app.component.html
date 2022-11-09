@@ -6,7 +6,7 @@
       <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.svg" alt=""></a>       
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.svg" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -28,15 +28,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#portfolio">
+                <a class="nav-link" href="#screenshots">
                   Screenshots
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testimonial">
+                <a class="nav-link" href="#faq">
                   FAQ
                 </a>
-              </li>  
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">
                   Contact
@@ -56,11 +56,11 @@
               <div class="contents text-center">
                 <h2 class="head-title wow fadeInUp">A Microsoft Teams Add-On to <span>fight loneliness</span> for Work from Home Employees</h2>
                 <div class="header-button wow fadeInUp" data-wow-delay="0.3s">
-                  <a href="#services" class="btn btn-common"><img src="assets/img/Microsoft_Office_Teams.svg">Add to Teams</a>
+                  <a class="btn btn-common" (click)="openModal()"><img src="assets/img/Microsoft_Office_Teams.svg">Add to Teams</a>
                 </div>
               </div>
               <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.6s">
-                <img class="img-fluid" src="assets/img/hero-1.png" alt="">
+                <img class="img-fluid" src="assets/img/banner.png" alt="">
               </div>
             </div>
           </div>
@@ -79,7 +79,7 @@
             <div class="text-wrapper">
               <div>
                 <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s">How we help</h2>
-                <a href="#services" class="btn btn-common"><img src="assets/img/Microsoft_Office_Teams.svg">Add to Teams</a>
+                <!-- <a href="#services" class="btn btn-common"><img src="assets/img/Microsoft_Office_Teams.svg">Add to Teams</a> -->
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@
               </div>
               <div class="services-content">
                 <h3><a href="#">Breakout Sessions</a></h3>
-                <p>Breakout sessions which occur once every 30 minutes with more than 300 Icebreaker topics</p>
+                <p>Breakout sessions which occur every 30 minutes with over 300 Icebreaker topics</p>
               </div>
             </div>
           </div>
@@ -220,7 +220,7 @@
     </section>
     <!-- End Video Promo Section -->
 
-    <!-- Pricing section Start --> 
+    <!-- Pricing section Start -->
     <section id="pricing" class="section-padding bg-gray">
       <div class="container">
         <div class="section-header text-center">
@@ -245,8 +245,8 @@
                 <li>-</li>
                 <li>-</li>
               </ul>
-              <button class="btn btn-common">Add to Teams</button>
-            </div> 
+              <button class="btn btn-common" (click)="openModal()">Add to Teams</button>
+            </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 active">
             <div class="table wow fadeInUp" id="active-tb" data-wow-delay="1.2s">
@@ -265,8 +265,8 @@
                 <li>Analytics</li>
                 <li>-</li>
               </ul>
-              <button class="btn btn-common">Add to Teams</button>
-           </div> 
+              <button class="btn btn-common" (click)="openModal()">Add to Teams</button>
+           </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="table wow fadeInRight" data-wow-delay="1.2s">
@@ -285,39 +285,39 @@
                 <li>Analytics</li>
                 <li>Custom Branding</li>
               </ul>
-              <button class="btn btn-common">Add to Teams</button>
-            </div> 
+              <button class="btn btn-common" (click)="openModal()">Add to Teams</button>
+            </div>
           </div>
         </div>
         <div class="contents text-center">
           <div>
-            <a href="#services" class="btn btn-common">Try 6 months free</a>
+            <a href="#services" class="btn btn-common" (click)="openModal()">Try 6 months free</a>
           </div>
         </div>
       </div>
     </section>
     <!-- Pricing Table Section End -->
-    
+
     <!-- Portfolio Section -->
-    <section id="Screenshots" class="section-padding">
+    <section id="screenshots" class="section-padding">
       <!-- Container Starts -->
       <div class="container">
         <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Application Screenshots</h2>
           <p>Onboard with ease and start building companionship at work full of fun.</p>
         </div>
-        <div class="row">          
+        <div class="row">
           <div class="col-md-12">
             <!-- Portfolio Controller/Buttons -->
             <div class="controls text-center">
               <a class="filter active btn btn-common btn-effect" data-filter="all">
-                All 
+                All
               </a>
               <a class="filter btn btn-common btn-effect" data-filter=".discovery">
-                Discovery 
+                Discovery
               </a>
               <a class="filter btn btn-common btn-effect" data-filter=".bot">
-                Foo Bot 
+                Foo Bot
               </a>
               <a class="filter btn btn-common btn-effect" data-filter=".trio">
                 My Trio
@@ -335,7 +335,7 @@
           <div class="col-lg-4 col-md-6 col-xs-12 mix discovery">
             <div class="portfolio-item">
               <div class="shot-item">
-                <img src="assets/img/portfolio/img-1.jpg" alt="" />  
+                <img src="assets/img/portfolio/img-1.jpg" alt="" />
                 <div class="single-content">
                   <div class="fancy-table">
                     <div class="table-cell">
@@ -346,13 +346,13 @@
                     </div>
                   </div>
                 </div>
-              </div>               
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 mix bot">
             <div class="portfolio-item">
               <div class="shot-item">
-                <img src="assets/img/portfolio/img-2.jpg" alt="" /> 
+                <img src="assets/img/portfolio/img-2.jpg" alt="" />
                 <div class="single-content">
                   <div class="fancy-table">
                     <div class="table-cell">
@@ -363,13 +363,13 @@
                     </div>
                   </div>
                 </div>
-              </div>               
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 mix trio">
             <div class="portfolio-item">
               <div class="shot-item">
-                <img src="assets/img/portfolio/img-3.jpg" alt="" />  
+                <img src="assets/img/portfolio/img-3.jpg" alt="" />
                 <div class="single-content">
                   <div class="fancy-table">
                     <div class="table-cell">
@@ -380,13 +380,13 @@
                     </div>
                   </div>
                 </div>
-              </div>               
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 mix development Trio">
             <div class="portfolio-item">
               <div class="shot-item">
-                <img src="assets/img/portfolio/img-4.jpg" alt="" /> 
+                <img src="assets/img/portfolio/img-4.jpg" alt="" />
                 <div class="single-content">
                   <div class="fancy-table">
                     <div class="table-cell">
@@ -397,13 +397,13 @@
                     </div>
                   </div>
                 </div>
-              </div>               
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 mix trio">
             <div class="portfolio-item">
               <div class="shot-item">
-                <img src="assets/img/portfolio/img-5.jpg" alt="" />  
+                <img src="assets/img/portfolio/img-5.jpg" alt="" />
                 <div class="single-content">
                   <div class="fancy-table">
                     <div class="table-cell">
@@ -414,13 +414,13 @@
                     </div>
                   </div>
                 </div>
-              </div>               
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 mix sessions">
             <div class="portfolio-item">
               <div class="shot-item">
-                <img src="assets/img/portfolio/img-6.jpg" alt="" />  
+                <img src="assets/img/portfolio/img-6.jpg" alt="" />
                 <div class="single-content">
                   <div class="fancy-table">
                     <div class="table-cell">
@@ -431,15 +431,15 @@
                     </div>
                   </div>
                 </div>
-              </div>               
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- Container Ends -->
     </section>
-    <!-- Portfolio Section Ends --> 
-  
+    <!-- Portfolio Section Ends -->
+
     <!-- Testimonial Section Start -->
     <section id="testimonial" class="testimonial section-padding">
       <div class="overlay"></div>
@@ -450,70 +450,20 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="img-thumb">
-                    <img src="assets/img/testimonial/img1.jpg" alt="">
+                    <img src="assets/img/testimonial/simonsinek.jpeg" alt="">
                   </div>
                   <div class="info">
-                    <h2><a href="#">Grenchen Pearce</a></h2>
-                    <h3><a href="#">Boston Brothers co.</a></h3>
+                    <h2><a href="#">Simon Sinek</a></h2>
+                    <h3><a href="#">American Author</a></h3>
                   </div>
                   <div class="content">
-                    <p class="description">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                    <p class="description">"At the end of the day, humans are social animals, and we are at our best when we get to do things with others who appreciate and enjoy what we enjoy. It's what keeps us human."
+                    </p>
                   </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="img-thumb">
-                    <img src="assets/img/testimonial/img2.jpg" alt="">
-                  </div>
-                  <div class="info">
-                    <h2><a href="#">Domeni GEsson</a></h2>
-                    <h3><a href="#">Awesome Technology co.</a></h3>
-                  </div>
+                  <br>
                   <div class="content">
-                    <p class="description">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="img-thumb">
-                    <img src="assets/img/testimonial/img3.jpg" alt="">
-                  </div>
-                  <div class="info">
-                    <h2><a href="#">Dommini Albert</a></h2>
-                    <h3><a href="#">Nesnal Design co.</a></h3>
-                  </div>
-                  <div class="content">
-                    <p class="description">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="img-thumb">
-                    <img src="assets/img/testimonial/img4.png" alt="">
-                  </div>
-                  <div class="info">
-                    <h2><a href="#">Fernanda Anaya</a></h2>
-                    <h3><a href="#">Developer</a></h3>
-                  </div>
-                  <div class="content">
-                    <p class="description">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="img-thumb">
-                    <img src="assets/img/testimonial/img5.png" alt="">
-                  </div>
-                  <div class="info">
-                    <h2><a href="#">Jason A.</a></h2>
-                    <h3><a href="#">Designer</a></h3>
-                  </div>
-                  <div class="content">
-                    <p class="description">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                    <p><i>A study from Buffer, finds that loneliness as one of the top three struggles while working from home. Fun-O-One helps reduce loneliness fostering companionship at work through team building</i>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -522,155 +472,176 @@
         </div>
       </div>
     </section>
-    <!-- Testimonial Section End -->  
+    <!-- Testimonial Section End -->
 
     <!-- Blog Section -->
-    <section id="blog" class="section-padding">
-      <!-- Container Starts -->
+    <section id="faq" class="section-padding">
+
       <div class="container">
         <div class="section-header text-center">
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Latest blog</h2>
-          <p>A desire to help and empower others between community contributors in technology <br> began to grow in 2020.</p>
+          <h3 class="section-title wow fadeInDown animated">FAQ</h3>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper wow fadeInLeft" data-wow-delay="0.3s">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="assets/img/blog/img1.jpg" alt="">
-                </a>                
-              </div>
-              <div class="blog-item-text"> 
-                <h3>
-                <a href="single-post.html">Suspendisse dictum non velit</a>
-                </h3>
-                <p>
-                Nunc in mauris a ante rhoncus tristique vitae et nisl. Quisque ullamcorper rutrum lacinia. Integer varius ornare egestas. 
-                </p>
-                <a href="single-post.html" class="btn btn-common btn-rm">Read More</a>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
+        <main class="faq-content">
 
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.6s">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="assets/img/blog/img2.jpg" alt="">
-                </a>                
-              </div>
-              <div class="blog-item-text"> 
-                <h3>
-                <a href="single-post.html">Remarkably Did Increasing</a>
-                </h3>
-                <p>
-                Nunc in mauris a ante rhoncus tristique vitae et nisl. Quisque ullamcorper rutrum lacinia. Integer varius ornare egestas. 
-                </p>
-                <a href="single-post.html" class="btn btn-common btn-rm">Read More</a>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
 
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper wow fadeInRight" data-wow-delay="0.3s">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="assets/img/blog/img3.jpg" alt="">
-                </a>                
+          <div class="faq-articles">
+            <article class="faq-accordion">
+              <input type="checkbox" class="tgg-title" id="tgg-title-1" />
+
+              <div class="faq-accordion-title">
+                <label for="tgg-title-1">
+                  <h3>How can I download Fun-O-One?</h3>
+                  <span class="arrow-icon">
+                    <img
+                      src="../assets/img/icon-arrow-down.svg"
+                    />
+                  </span>
+                </label>
               </div>
-              <div class="blog-item-text"> 
-                <h3>
-                  <a href="single-post.html">Changing the topic scope</a>
-                </h3>
+
+              <div class="faq-accordion-content">
                 <p>
-                Nunc in mauris a ante rhoncus tristique vitae et nisl. Quisque ullamcorper rutrum lacinia. Integer varius ornare egestas. 
+                  The first version of the app will be available on Microsoft Teams.
+                  Signup to get notified when the app is available.
                 </p>
-                <a href="single-post.html" class="btn btn-common btn-rm">Read More</a>
               </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
+            </article>
+            <!-- faq accordion -->
+
+            <article class="faq-accordion">
+              <input type="checkbox" class="tgg-title" id="tgg-title-2" />
+
+              <div class="faq-accordion-title">
+                <label for="tgg-title-2">
+                  <h3>Is it available on Slack?</h3>
+                  <span class="arrow-icon">
+                    <img
+                    src="../assets/img/icon-arrow-down.svg"
+                    />
+                  </span>
+                </label>
+              </div>
+
+              <div class="faq-accordion-content">
+                <p>
+                  First version available only on Microsoft Teams. Planning to release for slack and zoom end of 2023
+                </p>
+              </div>
+            </article>
+            <!-- faq accordion -->
+
+            <article class="faq-accordion">
+              <input class="tgg-title" type="checkbox" id="tgg-title-3" />
+
+              <div class="faq-accordion-title">
+                <label for="tgg-title-3">
+                  <h3>Is the app free to use</h3>
+                  <span class="arrow-icon">
+                    <img
+                    src="../assets/img/icon-arrow-down.svg"
+                    />
+                  </span>
+                </label>
+              </div>
+
+              <div class="faq-accordion-content">
+                <p>
+                  Adding it to individual teams is free.
+                  The organization plans are available to try out 6 months free followed by the minimum monthly starting subscription of $ 199
+                </p>
+              </div>
+            </article>
+            <!-- faq accordion -->
+
+            <article class="faq-accordion">
+              <input class="tgg-title" type="checkbox" id="tgg-title-4" />
+
+              <div class="faq-accordion-title">
+                <label for="tgg-title-4">
+                  <h3>Can we use 3D avatars by default</h3>
+                  <span class="arrow-icon">
+                    <img
+                    src="../assets/img/icon-arrow-down.svg"
+                    />
+                  </span>
+                </label>
+              </div>
+
+              <div class="faq-accordion-content">
+                <p>
+                  Yes, it comes by default without any premium. However, you need to install FOO (Fun-O-One) virtual camera to have the feature integrated.
+                </p>
+              </div>
+            </article>
+            <!-- faq accordion -->
+
+            <article class="faq-accordion">
+              <input class="tgg-title" type="checkbox" id="tgg-title-5" />
+
+              <div class="faq-accordion-title">
+                <label for="tgg-title-5">
+                  <h3>Can you use the app outside of the organization</h3>
+                  <span class="arrow-icon">
+                    <img
+                    src="../assets/img/icon-arrow-down.svg"
+                    />
+                  </span>
+                </label>
+              </div>
+
+              <div class="faq-accordion-content">
+                <p>
+                  Fun-O-One aims to reduce loneliness for remote workers. Hence the app is available for Offical use and can pair people only within a team / organization.
+                </p>
+              </div>
+            </article>
+            <!-- faq accordion -->
           </div>
-        </div>
+          <!-- faq articles -->
+        </main>
       </div>
     </section>
     <!-- blog Section End -->
 
-    <!-- Clients Section Start -->
-    <div id="clients" class="section-padding bg-gray">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">NOTABLE CLIENTS</h2>
-          <p>Over the last 20 years, we have helped and guided organisations to achieve outstanding results</p>
-        </div>
-        <div class="row text-align-">
-          <div class="col-lg-3 col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="client-item-wrapper">
-              <img class="img-fluid" src="assets/img/clients/img1.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="client-item-wrapper">
-              <img class="img-fluid" src="assets/img/clients/img2.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="0.9s">
-            <div class="client-item-wrapper">
-              <img class="img-fluid" src="assets/img/clients/img3.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
-            <div class="client-item-wrapper">
-              <img class="img-fluid"  src="assets/img/clients/img4.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Clients Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="section-padding">    
+    <section id="contact" class="section-padding bg-gray">
       <div class="container">
-        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
           <div class="col-md-6 col-lg-6 col-sm-12">
             <div class="contact-block">
-              <form id="contactForm">
+              <form [formGroup]="contactForm" (ngSubmit)="sendMessage()">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name"  formControlName="name">
                       <div class="help-block with-errors"></div>
-                    </div>                                 
+                    </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
-                      <div class="help-block with-errors"></div>
-                    </div> 
+                      <input type="email" placeholder="Email" id="email" class="form-control" name="email" email required formControlName="email">
+                    </div>
                   </div>
                    <div class="col-md-12">
                     <div class="form-group">
-                      <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+                      <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required formControlName="subject">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                   <div class="col-md-12">
-                    <div class="form-group"> 
-                      <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
+                    <div class="form-group">
+                      <textarea class="form-control" id="message" placeholder="Your Message (Optional)" rows="5" formControlName="message"></textarea>
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="submit-button">
-                      <button class="btn btn-common" id="form-submit" type="submit">Send Message</button>
-                      <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                      <div class="clearfix"></div> 
+                      <button class="btn btn-common" id="contact-form-submit" type="submit" [disabled]="!contactForm.valid">Send Message</button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      <div class="clearfix"></div>
+                      <p class="feedback" *ngIf="showalert" >✓ Sent!</p>
                     </div>
                   </div>
-                </div>            
+                </div>
               </form>
             </div>
           </div>
@@ -680,7 +651,7 @@
                 <h1>Lets connect</h1>
                 <p>Get in touch to get any questions answered</p>
               </div>
-              <h2>Contact Us</h2>
+              <h1>Contact Us</h1>
               <div class="contact-right">
                 <div class="single-contact">
                   <div class="contact-icon">
@@ -704,10 +675,10 @@
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </section>
     <!-- Contact Section End -->
-    
+
     <!-- Copyright Section Start -->
     <div class="copyright">
       <div class="container">
@@ -717,7 +688,7 @@
               <img src="assets/img/logo2.svg" alt="">
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-xs-12">     
+          <div class="col-lg-4 col-md-4 col-xs-12">
             <div class="social-icon text-center">
               <!-- <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
               <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
@@ -727,7 +698,7 @@
           </div>
           <div class="col-lg-4 col-md-5 col-xs-12">
             <p class="float-right">Designed and Developed by <a href="" rel="nofollow">Codematic, LLC</a></p>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
@@ -737,12 +708,14 @@
     <a href="#" class="back-to-top">
     	<i class="lni-arrow-up"></i>
     </a>
-    
+
     <!-- Preloader -->
     <div id="preloader">
       <div class="loader" id="loader-1"></div>
     </div>
     <!-- End Preloader -->
-  
-      
+
+
   </div>
+
+

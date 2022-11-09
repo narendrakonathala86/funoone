@@ -1,0 +1,59 @@
+<div class="modal-body">
+  <a href="#" class="closex" (click)="modalRef.close()"></a>
+  <div class="count-down-timer">
+    <img src="assets/img/illustration-woman-online-mobile.svg" alt="" />
+    <h2>Coming Soon</h2>
+    <p>Be the first to know when we launch.</p>
+    <p><i>Its a one time email. We never spam</i></p>
+    <form [formGroup]="contactForm" (ngSubmit)="saveNotification()">
+      <div>
+        <input
+          type="text"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+          email
+          formControlName="email"
+        />
+        <div class="help-block with-errors"></div>
+      </div>
+      <div class="submit-button">
+        <button
+          class="btn btn-common"
+          id="contact-form-submit"
+          type="submit"
+          [disabled]="!contactForm.valid"
+        >
+          Notify
+        </button>
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+        <p class="feedback" *ngIf="showalert">Subscribed!</p>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="modal-footer">
+  <!-- <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
+    Close
+  </button> -->
+  <div class="count-down-timer">
+    <p>Countdown to launch date {{ currentTime }}</p>
+    <div class="wrapper">
+      <div class="description">
+        <p>Days</p>
+        <p>Hours</p>
+        <p>Minutes</p>
+        <p>Seconds</p>
+      </div>
+      <div class="times">
+        <p #days></p>
+        <p #hours></p>
+        <p #minutes></p>
+        <p #seconds></p>
+      </div>
+    </div>
+  </div>
+</div>

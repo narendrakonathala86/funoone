@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "funoone:build:production",
+            "firebaseProject": "fun-o-one",
+            "firebaseHostingSite": "fun-o-one"
+          }
         }
       }
     }

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fun-o-one": {
+      "hosting": {
+        "funoone": [
+          "fun-o-one"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fun-o-one"
+  }
+}

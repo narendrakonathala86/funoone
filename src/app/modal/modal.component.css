@@ -1,0 +1,83 @@
+.closex {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+  outline: none;
+  border: 0;
+}
+.closex:hover {
+  opacity: 1;
+}
+.closex:before, .closex:after {
+  position: absolute;
+  left: 7px;
+  content: ' ';
+  height: 17px;
+  width: 1px;
+  background-color: #333;
+}
+.closex:before {
+  transform: rotate(45deg);
+}
+.closex:after {
+  transform: rotate(-45deg);
+}
+
+
+.count-down-timer {
+  /* box-shadow: 2px 6px 9px 2px rgba(0, 0, 0, 0.2); */
+  text-align: center;
+  background-color: #ffffff;
+  max-width: 400px;
+  margin: 20px auto;
+  color: #1262AF;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.count-down-timer > p {
+  margin: 5px 0 15px 0;
+}
+
+.count-down-timer > img {
+  max-height: 200px;
+  max-width: 350px;
+}
+
+.count-down-timer .wrapper .description, .count-down-timer .wrapper .times {
+  display: grid;
+  grid-template-columns: repeat(4, calc(25% - 8px));
+  grid-column-gap: 10px;
+}
+.count-down-timer .wrapper .description > p {
+  margin: 0;
+  font: normal 14px sans-serif;
+}
+.count-down-timer .wrapper .times p {
+  letter-spacing: -5px;
+  position: relative;
+  margin: 0;
+  font: normal 50px courier, sans-serif;
+}
+.count-down-timer .wrapper .times p ::ng-deep img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  display: block;
+  height: 30px;
+}
+@media screen and (max-width: 430px) {
+  .count-down-timer {
+    margin: 20px;
+  }
+  .count-down-timer > img {
+    max-height: 100px;
+    max-width: 175px;
+  }
+}
